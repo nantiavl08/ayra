@@ -1,0 +1,120 @@
+/* γενικο setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #b5a48b; 
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f0f0f0; /* Εδώ μπορείς να βάλεις μια minimal εικόνα */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* Layout Containers */
+.container {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+/* Products Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.product-card {
+    background: #fff;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.product-img {
+    height: 300px;
+    background: #eee; /* Placeholder για εικόνα */
+    margin-bottom: 1rem;
+}
+
+/* Buttons & Forms */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b5a48b;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    outline: none;
+}
